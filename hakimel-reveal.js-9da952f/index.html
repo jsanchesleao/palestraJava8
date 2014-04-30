@@ -17,9 +17,12 @@
 		<link rel="stylesheet" href="css/slides.css">
 		<link rel="stylesheet" href="css/app.css">
 		<link rel="stylesheet" href="css/app2.css">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script src="js/modernizr.js"></script>
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -43,7 +46,7 @@
 		
 
 		<div class="reveal reveal-viewport theme-font-opensans theme-color-beige-brown">
-			<div class="slides" style="position: relative; top: 400px;">
+			<div class="slides" style="position: relative; top: 330px;">
 				<section data-id="72b9aebb4d88a211ecb1343f88cfcf63" class=""><h1>Java 8</h1>
 <div>Lambda Lambda Lambda</div>
 <div>
@@ -397,19 +400,20 @@ int value = Optional.of( createText() )
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
+		<script src="js/app.js"></script>
 
 		<script>
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				controls: false,
 				progress: true,
 				history: true,
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
